@@ -117,7 +117,7 @@ RUN set -x && \
     find ./user -type f -executable -name 'drbd[a-z]*' -exec mv -v {} /utils/ \;
 
 # Create shipper
-FROM alpine
+FROM alpine:3.24.1
 
 ARG DRBD_VER
 
